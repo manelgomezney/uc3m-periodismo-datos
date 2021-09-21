@@ -3,7 +3,7 @@
 
 
 
-Clase práctica --- 15/09/2021 
+## Clase práctica --- 15/09/2021 
 
 Para agregar una carpeta en github, crea un archivo y en el título añade al final una barra tal como "/", la carpeta se crea automáticamente.
 
@@ -59,3 +59,26 @@ El computer assisted reporting ha supuesto las aplicaciones informáticas a la h
 Importante, conocer el NICAR: National Institute of Computer Assister Reporting. Un anexo del IRE, que montan todos los años un congreso nacional que es el NICAR. Philip Meyers acabó formando parte de esto.
 
 En la próxima clase: periodismo de datos en España, como el grupo Medialab-Prado (un centro cultural importante).
+
+## Clase teórica 21/09
+
+En una tabla de datos necesitas datos. Existe el periodismo guiado por datos, una visión que persigue el periodismo a partir de la innovación. EL periodismo tiene que estar dando información verídica y no en invenciones, esto lo acerca más a ese ideal, además del periodismo de investigación. Este periodismo alude a que hoy en día tenemos una gran cantidad de datos, más cuando empezaba que buena parte de los gobiernos e instituciones tenían los datos en abierto (leyes de transparencia a partir de 2013). Hay una gran disponibilidad de toda la administraci
+ón pública de datos.
+Hay datos que no están a disposición de la ciudadanía, pero tenemos el derecho a hacer una petición de transparencia aunque no sea exitosa. Hay una serie de supuestos que pueden impedírnoslo. Ley de datos personales. 
+1989: el mundo de los bases de datos estructuradas se pone en boga, en aquel momento se empieza a conocer como periodismo de base de datos. Sandra Cruccianelli, formadora y docento.
+CSV: Valores separados por comas. Philipp Meyer usaba un programa que se llamaba Filter Tau, parecido a Mark Down, una sintaxis simple pero a la vez un programa que permite transformar una sintaxis en otras sintaxis estructuradas. Es una sintaxis para "lenguaje natural", lo que en términos de tipos de datos sería "strings", o cadenas de caracteres. Filter tau se utilizaba para trabajar con datos. Al principio, por lo que pfuese (visualmente en la pantalla se podría separar mejor) era el tabulador. Por eso antes se hablaba de TSV (Tabulation separated values), así como de *SV (valores separados por cualquier caracter, en España el más utillizado es el punto y coma)*. 
+También es muy interesante el tema de los permisos, pero ya lo trataremos.
+
+Hay tres tipos fundamentales de formatos de datos, sacando fuera las bases de datos SQL (un mundo aparte): Los *SV (*), los JSON y los XML (en el que se basa el hatml, lenguaje de marcado generalizado, un lenguaje que va a estructurar texto). XML, una especie de puente entre el mundo del texto y el lenguaje de los datos. Es un lenguaje de marcas extensible para hacer una réplica de base de datos SQL.
+Los JSON son también en modo texto: Java Script Object Notation. No lo vamos a utilizar porque no nos da tiempo pero también existe.
+
+Independientemente del formato, llegamos a otro tema que son los tipos de datos. No todos los CSV están listos para usarse. La mayor parte del tiempo se dedica limpiando los datos. Lectura de izquierda a derecha y de arriba a abajo. Hay filas y columnas. (rows and columns). La primera fila te indica qué tipo de información hay en cada columna, que suele separar los tipos de informaciones.
+Por ejemplo: si en una columna están todos los NIU de la clase, no serán números como tal porque aunque en realidad lo sean, no podremos operar con ellos sino que serán más bien caracteres identificadores. Esto demuestra que los números son un tipo concreto de datos. Otro pueden ser las fechas, que son números pero tampoco son operables. Son una estructura con una forma concreta, como YYYY-MM-DD. A esto se le puede añadir también la hora, según el tipo de dato de fecha. Para pasar lista en la columna de la decha, solo contaremos con datos "Booleanos", es decir código binario. Si incorporamos un tercer dato la tabla puede fallar.
+
+OpenRefine, un programa que hay que tener siempre encima para el periodismo de datos. Antes se llamaba Google Refine. Sirve para trabajar con datos en sucio. Lo que hace es utilizar la máquina virtual de Java para lanzar una aplicación web, donde cargas el csv y entonces ves los datos en su forma de visualización.
+
+Volviendo a la lista, en la parte de los apellidos no hay tildes, está ordenada por orden alfabético. Lo de las tildes es porque como la programación parte del inglés y este es un idioma que no acepta acentos, la mayor parte de los formatos de datos no aceptan caracteres con tilde o la letra ñ. Luego se evolucionó con los ISO-88859, y ahora el mundo vive feliz porque lo que existe es el UTF-8 o UNICODE, donde ya caben todos los caracteres. EL UNICODE, para que quede claro, es una codificación de caracteres de los archivos de datos. 
+
+Dentro del tipo de datos de los números, están los números decimales u otros tipos. Las cadenas de caracteres son un tipo de datos conocido como strings.
+
+Funciones: Join () para unir texto, uppercase () para poner las cosas en mayúscula y lowercase () para poner las cosas en minúscula.
