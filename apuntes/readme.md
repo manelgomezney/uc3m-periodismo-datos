@@ -795,3 +795,16 @@ git push -u origin main
 -   Resaltado de sintaxis en `nano`.
 -   [Atajos](https://www.nano-editor.org/dist/latest/cheatsheet.html) en `nano`
 -   Personalización en `nano`
+
+## 02/11/2021
+
+# Para hacer un trabajo en periodismo de datos
+
+- Markdown: apuntes en github
+
+- Pandoc: conversor universal de textos
+
+- Bootstrap: herramientas de código abierto para diseño de páginas web y aplicaciones
+
+- Datawrapper: para la visualización, si nos sentimos cómodos, podemos hacer un html con o sin estilo
+
