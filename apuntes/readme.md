@@ -806,5 +806,5 @@ git push -u origin main
 
 - Bootstrap: herramientas de código abierto para diseño de páginas web y aplicaciones
 
-- Datawrapper: para la visualización, si nos sentimos cómodos, podemos hacer un html con o sin estilo
+- Datawrapper: para la visualización, si nos sentimos cómodos, podemos hacer un html con o sin estilo.
 
