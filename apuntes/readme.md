@@ -808,3 +808,5 @@ git push -u origin main
 
 - Datawrapper: para la visualización, si nos sentimos cómodos, podemos hacer un html con o sin estilo.
 
+Control+D para salir de la terminal o salir de la "consola" de los comandos (cuando pones solo "lolcat" en la terminal, para volver a la normalidad tienes que poner control+d)
+
