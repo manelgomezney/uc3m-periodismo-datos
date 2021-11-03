@@ -810,3 +810,5 @@ git push -u origin main
 
 Control+D para salir de la terminal o salir de la "consola" de los comandos (cuando pones solo "lolcat" en la terminal, para volver a la normalidad tienes que poner control+d)
 
+## 03/11/2021
+
