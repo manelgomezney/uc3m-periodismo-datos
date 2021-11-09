@@ -813,3 +813,11 @@ Control+D para salir de la terminal o salir de la "consola" de los comandos (cua
 ## 09/11/2021
 
 Para enlazar una captura de pantalla, revisar rutas relativas y rutas absolutas.
+
+head feliz.csv -100 > 100primeraslineas.csv para crear un archivo con las 100 primeras líneas. Si en vez de head usamos tail, serían las 100 últimas.
+
+Comando tree para ver la estructura de directorios de forma gráfica
+
+Con el cd puedes usar la / para pasar a directorios dentro de directorios (cd src/data y vas a data directamente)
+
+cd .. para salir del directorio
