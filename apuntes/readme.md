@@ -821,3 +821,9 @@ Comando tree para ver la estructura de directorios de forma gráfica
 Con el cd puedes usar la / para pasar a directorios dentro de directorios (cd src/data y vas a data directamente)
 
 cd .. para salir del directorio
+
+## 10/11/2021
+
+Hoy daremos open refine.
+
+La API de Twitter es cómo te dice twitter que tienes que descargarte los datos
