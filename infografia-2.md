@@ -1,9 +1,6 @@
- ___        __                        __ _         ____  
-|_ _|_ __  / _| ___   __ _ _ __ __ _ / _(_) __ _  |___ \ 
- | || '_ \| |_ / _ \ / _` | '__/ _` | |_| |/ _` |   __) |
- | || | | |  _| (_) | (_| | | | (_| |  _| | (_| |  / __/ 
-|___|_| |_|_|  \___/ \__, |_|  \__,_|_| |_|\__,_| |_____|
-                     |___/                               
+# Infografía 2
+
+![infografia-2](https://user-images.githubusercontent.com/90630676/141356092-cedc742c-836f-452d-8619-7a1034c8846c.png)
 
 Para este ejercicio se ha seleccionado la infografía de el periódico El 
 País producida en el año 2017. Me parece un ejemplo muy correcto de lo 
