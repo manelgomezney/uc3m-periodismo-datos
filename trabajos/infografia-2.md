@@ -70,10 +70,15 @@ esquina superior izquierda, y así destacar los valores más
 significativos, para ahorrar tiempo en la interpretación de la 
 infografía.
 
-Por último, destacar un uso homogéneo de los colores, reducido a negro, 
-gris, azul, verde y naranja. Los predominantes son tanto el gris como el 
-azu, algo acertado ya que son los más neutros y hacen más efectivo el 
-elemento llamativo del resto de tonos.
+
+Por último, destacar un manejo correcto de distintos datos que, 
+aunque simples en cuanto a su comprensión y clasificación, sí que 
+implican un cierto reto a la hora de presentar de una forma atractiva, 
+comprensible y **resumida**, tal cantidad de información, con un 
+uso homogéneo de los colores, por ejemplo reducido a negro, 
+gris, azul, verde y naranja. Los predominantes en este son tanto el gris 
+como el azul, algo acertado ya que son muy básicos y neutros al mismo 
+tiempo, haciendo más efectivo el elemento llamativo del resto de tonos.
 
  _________ 
 < The End >
