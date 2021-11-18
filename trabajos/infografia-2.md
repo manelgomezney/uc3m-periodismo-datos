@@ -1,6 +1,6 @@
 # Infografía 2
 
-![infografia-2](https://user-images.githubusercontent.com/90630676/141356092-cedc742c-836f-452d-8619-7a1034c8846c.png)
+![Consumo de pescado en 2025](/images/infografia-2.png)
 
 Para este ejercicio se ha seleccionado la infografía de el periódico El 
 País producida en el año 2017. Me parece un ejemplo muy correcto de lo 
