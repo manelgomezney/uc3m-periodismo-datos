@@ -1,6 +1,6 @@
 # Infografía 2
 
-![Consumo de pescado en 2025](/images/infografia-2.png)
+![Consumo de pescado en 2025](/trabajos/images/infografia-2.png)
 
 Para este ejercicio se ha seleccionado la infografía de el periódico El 
 País producida en el año 2017. Me parece un ejemplo muy correcto de lo 
