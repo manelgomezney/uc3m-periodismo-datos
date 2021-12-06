@@ -1,6 +1,6 @@
 # Análisis de la primera visualización de datos realizada con Datawrapper
 
-![cantidad de veces que se desea un feliz viernes en Twitter](/images/datawrapper2.png)
+![cantidad de veces que se desea un feliz viernes en Twitter](/trabajos/images/datawrapper2.png)
 
 ## Procedimiento
 
