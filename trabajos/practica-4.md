@@ -91,7 +91,7 @@ sobre todo, incompleto, aunque todo ello se puede atribuir a los datos obtenidos
 
 # Análisis de la segunda visualización de datos realizada con Datawrapper
 
-![cantidad de veces que se desea una feliz feliz navidads en los últimos meses de 2020](/images/datawrapper1.png)
+![cantidad de veces que se desea una feliz feliz navidads en los últimos meses de 2020](trabajos//images/datawrapper1.png)
 
 ## Procedimiento 
 
