@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" Trabajo final="">
+    <meta name="author" content="Manel Gómez Ney">
+    <meta name="generator" content="nano">
+    <title>Práctica final de Periodismo de datos</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">
+
+
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+ <body class="d-flex flex-column h-100">
+
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid"> <a class="navbar-brand" href="index.html">Manel Gómez Ney</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="practica-1.index.html">Primera práctica</a>
+          </li>
+<li class="nav-item">
+        <a class="nav-link" href="practica-2.index.html">Segunda práctica</a>
+<li class="nav-item">
+        <a class="nav-link" href="practica-4.index.html">Cuarta práctica</a>
+<li class="nav-item">
+        <a class="nav-link" href="procedimientos.html">Procedimientos</a>
+</li>
+
+
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>Procedimientos realizados para la cuarta práctica</p>
+<p>Lo primero que he hecho ha sido instalarme el comando pandoc en la terminal con <code>brew install pandoc</code>. Esto ha sido vital a la hora de pasar las prácticas realizadas en formato “.md” (MarkDown) a “.html”. Esto ha sido realizado de la siguiente forma desde la terminal:</p>
+<p><code>pandoc practica-1.md &gt; practica-1.index.html</code></p>
+<p>De esta forma, en la misma carpeta se creaba el nuevo archivo que utilizaríamos para nuestra nueva página web. A continuación ha sido necesario llevar a cabo una reorganización de mi repositorio, creando una nueva carpeta llamada “docs” donde han ido los nuevos archivos en html (esto se hará con el comando <code>mv</code>), además de una copia de la carpeta “images” para poder enrutarlas de forma más sencilla en un futuro. La carpeta “docs”, en este sentido, es fundamental ya que será con la que vincularemos nuestra página web al Github a través de “Settings” y, una vez allí, “Pages”. Como curiosidad, para ello tuve que crearme un nuevo token, ya que el primero que me puse había caducado. Una vez realizado este punto, será necesario descargarse la plantilla “Sticky Footed Navbar” de la biblioteca de componentes de código abierto “Bootstrap”. Esto se hará escribiendo en la terminal:</p>
+<p><code> curl -o bootstrap.zip -L https://github.com/twbs/bootstrap/releases/download/v5.1.3/bootstrap-5.1.3-examples.zip </code></p>
+<p>En este caso, el <code>-o</code> es para indicar que nombre queremos que tenga el archivo descargado, mientras que el <code>-L</code> es para poder seguir adecuadamente la dirección en cuestión. En mi caso, descargué dicho archivo en el escritorio. De esta forma, utilizar el <code>unzip</code> hubiera sido algo fatigoso al llenarme de archivos la pantalla principal de mi ordenador que, a la postre, no necesitaré. Por ello he utilizado el comando unzip <code>-p</code>, que me ha permitido extraer solo los archivos necesarios que estaban dentro del comprimido:</p>
+<p><code> unzip -p bootstrap.zip bootstrap-5.1.3-examples/sticky-footer-navbar/index.html &gt; uc3m-periodismo-datos-nel/docs/index.html unzip -p bootstrap.zip bootstrap-5.1.3-examples/sticky-footer-navbar/sticky-footer-navbar.css &gt; uc3m-periodismo-datos-nel/docs/sticky-footer-navbar.css </code></p>
+<p>El símbolo “&gt;” es para indicar la nueva ubicación, que en este caso, será el directorio que hemos creado antes. De esta forma, el próximo paso es editar con nano el archivo “index.html”, el cual contiene el código fuente de la página que realizaremos. En la línea 36 está enrutado el archivo css extraído, que es el que define la plantilla que veremos cuando accedamos a nuestra página. En el apartado “head” es donde podremos estipular los metadatos convenientes, como el de “description” (hemos puesto Trabajo Final), “author” (Manel Gómez Ney) y “generator” (nano). También hemos puesto “Práctica final de Periodismo de datos” en como meta-título (en title).</p>
+<p>Ahora procederemos a editar el apartado <code>header</code>, que como su nombre indica, es el que configura cómo sera la cabecera de nuestra web. Hemos modificado la línea 44 para indicar la ruta requerida en <code>href=index.html</code>, además de que, en vez de “Fixed navbar”, aparezca “Manel Gómez Ney” en la cabecera. Además, como en este lugar queríamos posibilitar el acceso directo a todas nuestras prácticas, hemos utilizado las líneas con <code>&lt;a class=nav-link active</code>. Allí hemos indicado, de nuevo, que <code>href=index.html</code> para que la ruta esté correcta. Quedaría de este modo:</p>
+<p><code>&lt;li class=“nav-item”&gt;</code> <code>&lt;a class=“nav-link active” aria-current=“page” href=“index.html”&gt;Inicio&lt;/a&gt;</code> <code>&lt;/li&gt;</code></p>
+<p>A través de esto lo que estamos procurando es que, al lado de nuestro nombre, lo siguiente que aparezca sea la palabra “Inicio”, la cual nos llevará de nuevo a la página de index.html. Esta operacion la he repetido para colocar en la cabecera cada una de las prácticas enlazadas, que en vez de llevarnos a “index.html” nos conducirán, por ejemplo, a “practica-1.index.html” si seleccionamos “Primera práctica”, o a “procedimientos.html”, si seleccionamos “Procedimientos”, es decir a este texto.</p>
+<p>Ya tenemos la cabecera bien diseñada. Ahora el siguiente paso será elaborar todo el contenido del cuerpo de la página”, justo debajo de <code>&lt;!– Begin page content -&gt;</code> (línea 76). Donde pone <code>h1 class=…</code> es donde escribimos el título, que será “Trabajo final”, mientras que un par de líneas más abajo habemos redactado una pequeña presentación:</p>
+<p><code>&lt;p class=“lead”&gt;Bienvenidos a la página web de mi proyecto final en la asignatura…&lt;/p&gt;</code> <code>&lt;p&gt;Si queréis descargaros el estilo de la página web pulsad &lt;a href=“https://github.com/twbs/bootstrap/releases/download/v5.1.3/bootstrap-5.1.3-examples.zip”&gt;aquí&lt;/a&gt;.&lt;/p&gt;</code></p>
+<p>En la segunda línea hemos añadido un hipervínculo con el <code>a href=</code> para enriquecer un poco la página y, al mismo tiempo, ofrecer la plantilla a quien la desee. Por otro lado, he añadido también un índice indicando que, esta palabra, la quería en tamaño “h2” (no fue difícil deducir esto, ya que el título de “Trabajo final” estaba en h1 class):</p>
+<p><code>&lt;h1 class=“mt-5”&gt;Trabajo final&lt;/h1&gt;</code> <code>&lt;p&gt;&lt;/p&gt;</code></p>
+<p><code>&lt;h2 class=“mt-5”&gt;Índice:&lt;/p&gt;</code> <code>&lt;p&gt;&lt;/p&gt;</code></p>
+<p>El resto ha sido coser y cantar, escribiendo cada punto del indice con <code>&lt;p&gt;</code>, añadiendo el tag <code>&lt;b&gt;</code> para poner el título en negrita. Para concluir la elaboración del código fuente, pasamos al apartado <code>&lt;footer class=“foote…&gt;</code> (línea 98). Pensé que, ya que en muchas páginas webs el pie se utiliza para poner los datos de contacto, en esta ocasión podía ser una buena oportunidad de ofrecer la posibilidad de ir a mi repositorio de Github:</p>
+<p><code>&lt;footer class=“footer mt-auto py-3 bg-light”&gt;</code> <code>&lt;div class=“container”&gt;</code> <code>&lt;span class=“text-muted”&gt;Si queréis acceder a mis trabajos en Github pulsad &lt;a href=“https://github.com/manelgomezney/uc3m-periodismo-datos-nel”&gt;aquí.&lt;/a&gt;&lt;/span&gt;</code> <code>&lt;/div&gt;</code> <code>&lt;/footer&gt;</code></p>
+<p>Ya tenemos el index.html modificado a nuestro gusto para que la página web presente un aspecto y contenido óptimos. Sin embargo, han habido varios problemas:</p>
+<ol type="1">
+<li>El estilo no se cargaba correctamente, lo cual indicaba que algunas rutas no se habían puesto correctamente, concretamente en la línea 16, donde existía el problema añadido de no haber descargado el archivo css requerido. De nuevo, tuve que utilizar el <code>unzip -p</code> para descargarme el archivo concreto que necesitaba). Hubo que realizar estos pasos, explicados en clase:</li>
+</ol>
+<p><code>grep -rn css index.html (para conocer las rutas incorrectas)</code></p>
+<p><code>grep -rn src index.html (lo mismo pero esta vez con archivos .js)</code></p>
+<p><code>Unzip -p</code> (muy parecido a lo que se hizo al inicio de la práctica, pero con los archivos css y js que me faltaban)</p>
+<p>Corregimos las rutas, por ejemplo:</p>
+<p>De <code>&lt;link href=“../assets/dist/css/bootstrap.min.css” rel=“stylesheet”&gt;</code></p>
+<p>A <code>&lt;link href=“css/bootstrap.min.css” rel=“stylesheet”&gt;</code> (He creado una carpeta de nombre “css” para todos los archivos en este formato)</p>
+<ol start="2" type="1">
+<li>Las imágenes utilizadas no aparecen en la página web. Esto, de nuevo, es un problema de rutas, así que hemos ido a todas las prácticas en html para modificarla. Pongo a continuación un caso concreto:</li>
+</ol>
+<p>De</p>
+<p><code>&lt;figure&gt;</code> <code>&lt;img src=“/images/infografia-1.jpeg” alt=“Periodismo digital” width=“550” height=“750” /&gt;&lt;figcaption aria-hidden=“true”&gt;Periodismo digital&lt;/figcaption&gt;</code> <code>&lt;/figure&gt;</code></p>
+<p>A</p>
+<p><code>&lt;figure&gt;</code> <code>&lt;img src=“images/infografia-1.jpeg” alt=“Periodismo digital” width=“550” height=“750” /&gt;&lt;figcaption aria-hidden=“true”&gt;Periodismo digital&lt;/figcaption&gt;</code> <code>&lt;/figure&gt;</code></p>
+<p>Por algún motivo que desconozco, al pasar el archivo a html se puso una “/” innecesaria en la ruta. Además, se puede comprobar que en esta imagen he añadido las dimensiones que quería que tuviese la infografía, ya que me aparecía con un tamaño descomunal (algo que en el resto no ocurría). La forma en que lo he hecho ha sido con ese <code>width</code> y <code>height</code>, solución que encontré en Google.</p>
+<ol start="3" type="1">
+<li><p>Al escribir esta memoria he tenido algunos problemas a la hora de poner cualquier término entre estos dos símbolos: “&lt;” y “&gt;”. Esto es debido a que pandoc, al pasarlo, lo interpreta como si fuera parte del archivo html, así que si pongo <code>&lt;h1&gt;</code> me saldrá el texto con el tamaño de un título. Por ello, me he visto en la obligación de cambiar cada uno de estos símbolos por su correspondiente en html, es decir “&amp; l t ;” (todo junto, que si no lo separo me sale esto “&lt;”) y “&amp; g t ;”. Una ardua tarea, sinceramente. Además, para distinguir comandos y los trozos de código he usado el tag <code>&lt;code&gt;</code>. Y aquí termina esta memoria.</p></li>
+<li><p>En las páginas no me sale cabecera ni pie, como en el inicio principal, así que crearé dos archivos nuevos html (uno para cada apartado) donde copiaré y pegaré el contenido de &lt;header&gt; y &lt;footer&gt;, respectivamente. Luego usare el comando <code>cat</code> para unirlos con las prácticas, tal y como el profesor ha indicado en el repositorio.</p></li>
+</ol>
+<p>Y aquí termina esta memoria</p>
+
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Si queréis acceder a mis trabajos en Github pulsad <a href="https://github.com/manelgomezney/uc3m-periodismo-datos-nel">aquí.</a></span>
+  </div>
+</footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+</html>

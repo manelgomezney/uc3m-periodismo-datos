@@ -1,6 +1,81 @@
+<!doctype html>
+<html lang="es" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" Trabajo final="">
+    <meta name="author" content="Manel Gómez Ney">
+    <meta name="generator" content="nano">
+    <title>Práctica final de Periodismo de datos</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/">
+
+
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid"> <a class="navbar-brand" href="index.html">Manel Gómez Ney</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="practica-1.index.html">Primera práctica</a>
+          </li>
+<li class="nav-item">
+        <a class="nav-link" href="practica-2.index.html">Segunda práctica</a>
+<li class="nav-item">
+        <a class="nav-link" href="practica-4.index.html">Cuarta práctica</a>
+<li class="nav-item">
+        <a class="nav-link" href="procedimientos.html">Procedimientos</a>
+</li>
+
+
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
 <h1 id="análisis-de-la-primera-visualización-de-datos-realizada-con-datawrapper">Análisis de la primera visualización de datos realizada con Datawrapper</h1>
 <figure>
-<img src="/images/datawrapper2.png" alt="cantidad de veces que se desea un feliz viernes en Twitter" /><figcaption aria-hidden="true">cantidad de veces que se desea un feliz viernes en Twitter</figcaption>
+<img src="images/datawrapper2.png" alt="cantidad de veces que se desea un feliz viernes en Twitter" /><figcaption aria-hidden="true">cantidad de veces que se desea un feliz viernes en Twitter</figcaption>
 </figure>
 <h2 id="procedimiento">Procedimiento</h2>
 <p>1- Se clonan los datos del archivo “feliz.csv” a través del comando git clone en la terminal</p>
@@ -38,7 +113,7 @@
 <p>Este gráfico es el primer proyecto que he realizado con Datawrapper, en el que además he tratado en Open Refine una base de datos no recolectados por mí mismo (desconociendo en consecuencia su naturaleza y características concretas). Por lo tanto, ya desde un principio se decidió elaborar un gráfico con una cantidad notablemente reducida de filas, para lo que iba a ser necesario utilizar las funciones más básicas del Open Refine (las facetas y el cluster, especialmente). Consiste, de este modo, en una visualización por columnas de la cantidad de veces que se desea un feliz viernes en el año 2020, entre los meses de marzo y septiembre (no había datos de otros meses en el mismo año). Este formato es ideal, en el sentido de que permite comparar las cantidades (representadas en el eje vertical) en distintos momentos de un periodo (estipulados en el eje horizontal). Un gráfico de líneas también habría podido servir, pero consideré que este último sirve más para mostrar una evolución en el tiempo, la cual se puede explicar posteriormente con una serie de razonamientos, algo que no creí útil en mi caso al no saber los motivos de una diferencia tan notable entre los meses (no creo que marzo sea, para nada, el mes con los mejores viernes del año). Aún así, en homenaje a este resultado se ha usado el color verde en el gráfico, para darle un toque más “primaveral”. Al tratarse de un gráfico con datos poco comunes, el título se hacía complicado, por lo que se ha aplicado un criterio más artístico en el que este solo llame la atención y luego, en la descripción justo de debajo, se explique un poco más concienzudamente la naturaleza de la información que se está visualizando, he ahí la utilización de elementos gráficos más distendidos como los calendarios. Se agradece que aparezcan del mismo modo el autor y la fuente. Lo segundo es algo que escaseaba en muchas infografías que encontré para llevar a cabo prácticas anteriores. También se han utilizado hipervínculos en esta información, situada en la parte inferior de la imagen, para que quien quiera pueda acceder a la fuente de los datos y así comprobar que sean correctos (algo que demuestra la honestidad de los mismos), en esta ocasión en el perfil de Github de “Pontedatos”. Por último, desde un punto de vista negativo, es una pena que no haya datos para más meses, haciendo que el gráfico quede un tanto irregular y, sobre todo, incompleto, aunque todo ello se puede atribuir a los datos obtenidos con el archivo “feliz.csv”. La excesiva simplicidad también es algo que podría corregirse, al tratarse Datawrapper de una herramienta que, bien entendida y utilizada, permite hacer gráficos más completos. Un ejemplo de cómo se podría haber enriquecido un poco más este trabajo, hubiera sido añadiendo datos, en las mismas fechas y en el mismo formato numérico, de otros días de la semana, para que quedaran varias columnas, obviamente con colores diferentes, en un mismo mes, y así poder comparar si marzo, teniendo “los viernes más felices”, también es el mes con “los jueves más felices”, o ese honor corresponde a otro mes. La tipografía también es algo mejorable, pero esto no se puede manejar debidamente con datawrapper, sino que habría que hacerlo con otra página web o programa de forma posterior (como Canva).</p>
 <h1 id="análisis-de-la-segunda-visualización-de-datos-realizada-con-datawrapper">Análisis de la segunda visualización de datos realizada con Datawrapper</h1>
 <figure>
-<img src="/images/datawrapper1.png" alt="cantidad de veces que se desea una feliz feliz navidads en los últimos meses de 2020" /><figcaption aria-hidden="true">cantidad de veces que se desea una feliz feliz navidads en los últimos meses de 2020</figcaption>
+<img src="images/datawrapper1.png" alt="cantidad de veces que se desea una feliz feliz navidads en los últimos meses de 2020" /><figcaption aria-hidden="true">cantidad de veces que se desea una feliz feliz navidads en los últimos meses de 2020</figcaption>
 </figure>
 <h2 id="procedimiento-1">Procedimiento</h2>
 <p>1- Se clonan los datos del archivo “feliz.csv” a través del comando git clone en la terminal</p>
@@ -75,3 +150,16 @@
 <p>4.12- Publicamos en el dashboard y descargamos en png (antes no lo he mencionado, pero hay que vigilar de no descargarlo en una escala superior a 1 si queremos subirlo a github, porque de ser así la imagen será demasiado grande, en mi opinión).</p>
 <h2 id="justificación-final-1">Justificación final</h2>
 <p>En este gráfico hemos procurado resolver algunos de los aspectos a mejorar en el primero, sobre todo en el tema de la simplicidad del gráfico, que esta vez cuenta con unos datos ligeramente más complejos de manejar por sus cantidades mayores y la mayor cantidad de fechas que, por lo tanto, apuntaban a un mejor resultado en la visualización a partir de un gráfico de líneas. Del mismo modo, también se ha intentado buscar un resultado distinto en el resto de elementos: en el título no hemos puesto una descripción justo debajo, al considerar que tan solo con lo que se ha escrito ya se entendía la naturaleza del gráfico. La tipografía es distinta al utilizar uno de los pocos temas en el diseño que permite la página de Datawrapper, con una letra menos gruesa pero más elegante, que conjuga, en mi opinión, con la sutileza de un gráfico de líneas que, en el caso de haber optado por columnas, hubiera quedado solapada por el grosor de estas. Otra notable diferencia es la escasez de elementos situacionales en el eje horizontal, donde solo aparece el nombre de los meses, buscando reforzar ese tono de evolución más fluida, la cual no quedaría tan reforzada si subdividiéramos explícitamente dicho eje. Para evitar que quede demasiado “abstracto”, hemos seleccionado la opción de las descripciones emergentes, que harán que podamos saber la fecha concreta del punto que queramos solo colocando el cursor encima de este. El problema (y el principal pero de este gráfico) es que, al exportarlo en formato png, no se puede comprobar. Queda por lo tanto patente la necesidad de averiguar una forma en la que poder mostrar el gráfico en este archivo de markdown que sí permita esa función. Aparte de esto, solo me queda decir que por la falta de tiempo no he podido realizar un tercer gráfico con una base de datos distinta a la de feliz.csv, pero me quedo con la curiosidad de probar el resultado con conjuntos ofrecidos por la propia página de datawrapper cuando vas a cargar los datos de un determinado archivo CSV. Me ha resultado más interesado el programa de Open Refine que el de Datawrapper, puesto que me parece que el potencial de este último es bastante menor en cuanto al aspecto exterior del gráfico (no así con la capacidad de datos que puede manejar, aunque es una lástima lo del límite de filas)</p>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Si queréis acceder a mis trabajos en Github pulsad <a href="https://github.com/manelgomezney/uc3m-periodismo-datos-nel">aquí.</a></span>
+  </div>
+</footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+</html>
