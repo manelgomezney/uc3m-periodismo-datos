@@ -72,7 +72,11 @@
   </nav>
 </header>
 
-<main>
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+<div class="container">
+
+
 <p></p>
 <p></p>
 <p></p>
@@ -119,7 +123,21 @@
 <li><p>En las páginas no me sale cabecera ni pie, como en el inicio principal, así que crearé dos archivos nuevos html (uno para cada apartado) donde copiaré y pegaré el contenido de &lt;header&gt; y &lt;footer&gt;, respectivamente. Luego usare el comando <code>cat</code> para unirlos con las prácticas, tal y como el profesor ha indicado en el repositorio.</p></li>
 </ol>
 <p>Y aquí termina esta memoria</p>
+<p></p>
+<p></p>
+<p></p>
+<p> O hubiera terminado, en caso de haber aprobado el trabajo en una primera instancia, lo cual ha implicado una segunda toma de contacto con el proyecto para solucionar los problemas señalados.</p>
+<p>Un ejemplo de ello serían los gráficos de la cuarta práctica, los cuales en vez de ofrecerse en <code></code>img se han colocado como <code>html</code> gracias a un iframe que hemos podido copiar y pegar desde la propia página de datawrapper. Esta, en el apartado disponibe para exportar dicho material te ofrecía el código requerido:</p>  
+<p><code>&lt;iframe title="🗓  Los viernes más &quot;felices&quot; de Twitter 🗓" aria-label="Gráfico de columnas" id="datawrapper-chart-pw4pV" src="https://datawrapper.dwcdn.net/pw4pV/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="642"&gt;&lt;/iframe&gt;&lt;script type="text/javascript"&l
+gt;!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r&lt;t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+&lt;/script&gt;</code>
+<p></p>
+<p></p>
+<p>Además, también en la cuarta práctica (la que más fallos ha presentado) se han modificado los gráficos para que sea posible acceder a los datos utilizados en la elaboración de los gráficos (algo que también está disponible en el pie de página de dicha práctica) y se ha enlazado la url de datawrapper. También he cambiado el marcado, sustituyendo el marcado original por uno de lista con el tag <code>&lt;ol type="1"&gt;</code> para que se reconociera como un listado (para lo cual también he usado el elemento <code>&lt;li&gt;</code>).</p>
+<p>Se ha creado, por otro lado, un archivo .zip en la nueva carpeta src donde se puede descargar todo el material de golpe, incluido también en el pie de página, junto con la igualmente nueva carpeta "data", donde figuran todos los datos utilizados en los gráficos, que si queréis podéis descargarlos igualmente<a href="src/datos.zip"> aquí</a>. Esta modificación se ha hecho con el comando <code>zip</code> de la terminal.</p>
+<p>Por último, he modificado el código de todas las prácticas para arreglar los fallos señalados en el estilo, que presentaba algunas imperfecciones al no especificar la <code>main class</code> y la <code>div class</code>
 
+</div>
 </main>
 
 <footer class="footer mt-auto py-3 bg-light">
